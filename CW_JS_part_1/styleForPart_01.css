@@ -1,0 +1,244 @@
+
+    /*налаштовуємо body*/
+    body {
+        height: 100vh;
+        background: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*налаштовуємо блок, який містить основний контент*/
+    .testForCostumer {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /*justify-content: center;*/
+        text-align: left;
+        background-color: black;
+        /*padding-left: 40px;*/
+        border-radius: 15px;
+    }
+
+    /*окремі налаштування для всіх кнопок, що знаходяться у блоці з основним контентом*/
+    .testForCostumer button {
+        cursor: pointer;
+    }
+
+    #boxForH1 {
+        height: 100px;
+        display: flex;
+        background-color: rgb(255, 230, 0);
+        justify-content: center;
+        margin-bottom: 40px;
+        border-radius: 10px;
+
+    }
+
+    /*налаштовуємо заголовок з ключовою назвою фукціоналу*/
+    h1 {
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    span {
+        color: black;
+        font-size: 55px;
+    }
+
+    /*окремі налаштування для форми*/
+    form {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        /*padding-left: 40px;*/
+    }
+
+    /*----------------налаштування блоку з верхнім інпутом----------------*/
+    #divByNameValue {
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 40px;
+    }
+
+    .topInput {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topInput input {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #btnAdd {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 18px;
+        border-radius: 5px;
+    }
+
+
+    /*----------------налаштування блоку з нижнім інпутом---------------*/
+    #divByList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+    }
+
+    .bottomInput {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottomInput input {
+        width: 300px;
+        height: 300px;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+    .bottomInputBtn button {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: 18px;
+        border-radius: 5px;
+    }
+
+    /*окрема стилізація кнопок додавання та видалення*/
+    #btnAdd {
+        background-color: green;
+        color: white;
+    }
+
+    #btnDel {
+        background-color: red;
+        color: white;
+    }
+
+
+/*налаштування адаптивність для mobile....*/
+
+@media screen and (min-width: 0) and (max-width: 480px){
+    body{
+        background-color: black;
+    }
+
+    h1{
+        color: black;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    .testForCostumer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+
+
+
+    }
+
+    #divByNameValue{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divByList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divByList input{
+        height: 200px;
+    }
+
+
+    .bottomInputBtn{
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .bottomInputBtn button{
+        width: 80px;
+        height: 40px;
+    }
+
+}
+
+    /*налаштування алаптивності для планшет..*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    h1{
+        color: black;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .testForCostumer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+    }
+
+    #divByNameValue{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divByList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divByList input{
+        height: 200px;
+    }
+
+    .bottomInputBtn{
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .bottomInputBtn button{
+        width: 80px;
+        height: 40px;
+    }
+}
