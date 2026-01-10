@@ -10,28 +10,25 @@
 </head>
 <body>
 
-</body>
-</html>
-
 <div class="testForCostumer">
     <div id="boxForH1"><h1>Test <span>JS</span></h1></div>
     <form>
-        <div id="divByNameValue">
+        <div id="blockWithInput">
             <div class="topInput">
-                <label>Name/Value Pair</label>
-                <input type="text" placeholder="name=value">
+                <label for="userInput">Name/Value Pair</label>
+                <input type="text" id="userInput" placeholder="name=value">
             </div>
             <div class="topInputBtn">
-                <button id="btnAdd">add</button>
+                <button type="button" id="btnAdd">add</button>
             </div>
         </div>
 
-        <div id="divByList">
-            <div class="bottomInput">
-                <label>Name/Value Pair List</label>
-                <input type="text">
+        <div id="blockWithList">
+            <div class="bottomOutput">
+                <label for="listPairs">Name/Value Pair List</label>
+                <textarea id="listPairs" rows="10" readonly></textarea>
             </div>
-            <div class="bottomInputBtn">
+            <div class="bottomOutputBtn">
                 <button id="btnSortByName">Sort By Name</button>
                 <button id="btnSortByValue">Sort By Value</button>
                 <button id="btnDel">Delete</button>

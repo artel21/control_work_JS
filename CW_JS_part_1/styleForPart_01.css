@@ -28,6 +28,7 @@
         cursor: pointer;
     }
 
+    /*налаштовуємо заголовок з ключовою назвою фукціоналу*/
     #boxForH1 {
         height: 100px;
         display: flex;
@@ -38,7 +39,6 @@
 
     }
 
-    /*налаштовуємо заголовок з ключовою назвою фукціоналу*/
     h1 {
         color: black;
         padding-left: 20px;
@@ -57,11 +57,10 @@
         display: flex;
         flex-direction: column;
         color: white;
-        /*padding-left: 40px;*/
     }
 
-    /*----------------налаштування блоку з верхнім інпутом----------------*/
-    #divByNameValue {
+    /*----------------налаштування блоку з верхнім інпутом , де користувач вводить дані---------------*/
+    #blockWithInput {
         width: 550px;
         display: flex;
         flex-direction: row;
@@ -94,28 +93,33 @@
     }
 
 
-    /*----------------налаштування блоку з нижнім інпутом---------------*/
-    #divByList {
+    /*----------------налаштування блоку для виведення списку пар та маніпуляцій з ними----------*/
+    #blockWithList {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding-bottom: 20px;
     }
 
-    .bottomInput {
+    .bottomOutput {
         display: flex;
         flex-direction: column;
     }
 
-    .bottomInput input {
+    .bottomOutput textarea {
+        display: flex;
+        text-align: left;
+        justify-content: start;
+        align-items: start;
         width: 300px;
         height: 300px;
         border: none;
         border-radius: 5px;
+        resize: vertical;
 
     }
 
-    .bottomInputBtn button {
+    .bottomOutputBtn button {
         width: 100px;
         height: 30px;
         display: flex;
@@ -139,7 +143,7 @@
     }
 
 
-/*налаштування адаптивність для mobile....*/
+/*налаштовуємо адаптивність для mobile....*/
 
 @media screen and (min-width: 0) and (max-width: 480px){
     body{
@@ -158,45 +162,40 @@
         justify-content: center;
         align-items: center;
         width: 370px;
-
-
-
     }
 
-    #divByNameValue{
+    #blockWithInput {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #divByList{
+    #blockWithList {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #divByList input{
+    #blockWithList textarea {
         height: 200px;
     }
 
-
-    .bottomInputBtn{
+    .bottomOutputBtn{
         width: 350px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .bottomInputBtn button{
+    .bottomOutputBtn button{
         width: 80px;
         height: 40px;
     }
-
 }
 
-    /*налаштування алаптивності для планшет..*/
+    /*налаштовуємо алаптивність для планшет..*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
     h1{
         color: black;
@@ -205,39 +204,37 @@
         padding-bottom: 5px;
     }
 
-    .testForCostumer{
+    .testForCostumer {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 450px;
     }
 
-    #divByNameValue{
+    #blockWithInput {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    #divByList{
+    #blockWithList {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    #divByList input{
+    #blockWithList textarea{
         height: 200px;
     }
 
-    .bottomInputBtn{
+    .bottomOutputBtn{
         width: 350px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .bottomInputBtn button{
+    .bottomOutputBtn button{
         width: 80px;
         height: 40px;
     }
