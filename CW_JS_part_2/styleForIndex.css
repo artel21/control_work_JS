@@ -7,12 +7,13 @@ body {
 h1 {
     text-align: center;
     color: white;
+    font-size: 48px;
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
     gap: 12px;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .user-card {
@@ -23,7 +24,7 @@ h1 {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .user-card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-14px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 .user-card h3 {

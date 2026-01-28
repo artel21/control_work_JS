@@ -38,7 +38,6 @@ if (!userId) {
                     .then(response => response.json())
                     .then(posts => {
                         const container = document.getElementById('postsContainer');
-                        container.innerHTML = '<h3>USER POSTS:</h3>';
 
                         posts.forEach(post => {
                             const postDiv = document.createElement('div');

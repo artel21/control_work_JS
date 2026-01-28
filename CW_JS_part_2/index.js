@@ -9,7 +9,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
 // створюю картки користувачів
 function renderUsers(users) {
     const container = document.getElementById('usersContainer');
-    //container.innerHTML = ''; // очищаємо на випадок повторного виклику
 
     users.forEach(user => {
         const card = document.createElement('div');
